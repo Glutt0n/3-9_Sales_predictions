@@ -16,10 +16,27 @@ https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii
   ![image](https://user-images.githubusercontent.com/118066797/224283193-cf2b723b-95a1-446b-8671-f1b1ecbc6498.png)
   
 The features with the highest correlation to the target 'Item_Outlet_Sales' were 'Item_MRP' and 'Outlet_Establishment_Year'
+
+![image](https://user-images.githubusercontent.com/118066797/225226670-8a922366-6448-4fcc-871b-bc415d7a2fde.png)
+
+ The top 5 selling food types across all outlet locations are as follows:
+
+> Starchy Foods:           $2374.332773
+
+
+> Seafood:                  $2326.065928
+
+> Fruits and Vegetables:    $2289.009592
+
+> Snack Foods:              $2277.321739
+
+> Household:                $2258.784300
+
+Insights: It would be well-advised to ensure that these five food types are in every possible outlet locations due to their apparent desirability. It's also clear that their popularity is also due to the fact that these products are largely what most households would consider to be essential items.
   
 ![image](https://user-images.githubusercontent.com/118066797/224282368-c09714cb-f4b6-45ab-98c3-b02475a4d164.png)
-
-Supermarket Type 1 had the overwhelming majority of counts while Types 2,3 and grocery store capped at around 1000. 
+ 
+Insights: This shows that stakeholders should push for building less supermarket types 2 and 3, less grocery stores and more supermarket type 1. The data shows that the overwhelming of sales come from these types of supermarkets. They are the breadwinners of the bunch. Grocery stores, and type 2 and 3 supermarkets had sales counts capped at around 1000.
 
 
 ### Methods:
