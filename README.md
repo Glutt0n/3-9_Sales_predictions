@@ -45,6 +45,7 @@ Insights: This shows that stakeholders should push for building less supermarket
 - Validation Split: splitting data to prepare it for machine learning
 - Data Transformation: Using transformers and pipelines for preprocessing
 - Evaluating a linear regression model and a decision tree regression model for sales predictions
+- DecisionTreeRegressor tuning of its max_depth hyperparameter
 
 
 #### Linear Regression performance:
@@ -55,19 +56,19 @@ Insights: This shows that stakeholders should push for building less supermarket
   - R² = 0.566
   - RMSE = 1094.455
 
-#### Decision Tree performance:
+#### (Tuned) Decision Tree performance:
 • Results for training data:
-  - R² = 1.0
-  - RMSE = 0.0
+  - R² = 0.604
+  - RMSE = 1082.646
 • Results for test data:
-  - R² = 0.216
-  - RMSE = 1470.764
+  - R² = 0.595
+  - RMSE = 1057.443
   
 
-In contrast to the linear regression model, whose train and test R² scores are nearly identical, the decision tree's R² scores are in stark contrast. We have a huge disparity between our perfect 1.0 Training R² score and our poor 0.216 Test R² score. Of course this means our RMSE for our decision is very large at 1470. 
+Our default model was extremely underfit. After tuning its max depth we are able to get a good balance of 0.60394 for our Train R2 score and a nearly identical 0.59471 for on our Test. This is much better. Not incredibly under or over fit. The model R2 isn't perfect but it seems to be the best this regressor can do after tuning. Much better than the LinearRegression model. 
+Also, while our train RMSE is not as well fit as it was in our default regressor, after tuning our test RMSE got better at 1057.443. The tuned regressor can make around $37 less in error. 
 ## Recommendations:
-
-Considering both the R2 and RMSE scores for both regressors, I would recommend using the linear regressor because it has higher predictive power than that of the decision tree regressor. 
-The linear regressor's room for error is less than that of that of the decision tree. 
+Considering both the R2 and RMSE scores for both regressors, I would recommend using the tuned decision tree regressor because it has higher predictive power than that of the linear regressor. 
+The tuned decision tree regressor's room for error is less than that of that of the decision tree with a Test RMSE of 1057.443 compared to the linear regressor's Test RMSE of 1094.455. The decision tree is the better model. 
 
 For any additional questions, please contact **leardrussell@gmail.com**
