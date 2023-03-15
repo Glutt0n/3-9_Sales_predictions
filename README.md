@@ -13,7 +13,16 @@ Can we predict future sales when given info on:
 ### Data:
 https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/ 
 
-## Methods
+  ![image](https://user-images.githubusercontent.com/118066797/224283193-cf2b723b-95a1-446b-8671-f1b1ecbc6498.png)
+  
+The features with the highest correlation to the target 'Item_Outlet_Sales' were 'Item_MRP' and 'Outlet_Establishment_Year'
+  
+![image](https://user-images.githubusercontent.com/118066797/224282368-c09714cb-f4b6-45ab-98c3-b02475a4d164.png)
+
+Supermarket Type 1 had the overwhelming majority of counts while Types 2,3 and grocery store capped at around 1000. 
+
+
+### Methods:
 - Data preparation steps with explanation and justification for choices
 - Data Cleaning: getting rid of duplicates rows and incorrect/questionable values
 - Validation Split: splitting data to prepare it for machine learning
@@ -37,11 +46,6 @@ https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii
   - R² = 0.216
   - RMSE = 1470.764
   
-  ![image](https://user-images.githubusercontent.com/118066797/224283193-cf2b723b-95a1-446b-8671-f1b1ecbc6498.png)
-The features with the highest correlation to the target 'Item_Outlet_Sales' were 'Item_MRP' and 'Outlet_Establishment_Year'
-  
-![image](https://user-images.githubusercontent.com/118066797/224282368-c09714cb-f4b6-45ab-98c3-b02475a4d164.png)
-Supermarket Type 1 had the overwhelming majority of counts while Types 2,3 and grocery store capped at around 1000. 
 
 In contrast to the linear regression model, whose train and test R² scores are nearly identical, the decision tree's R² scores are in stark contrast. We have a huge disparity between our perfect 1.0 Training R² score and our poor 0.216 Test R² score. Of course this means our RMSE for our decision is very large at 1470. 
 ## Recommendations:
